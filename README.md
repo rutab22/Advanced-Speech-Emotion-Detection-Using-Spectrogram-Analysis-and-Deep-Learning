@@ -2,26 +2,26 @@ Advanced Speech Emotion Detection (SED) using spectrogram analysis and deep lear
 
 The methodology for speech emotion recognition is as follows:
 
-Data Collection and Preprocessing
+*Data Collection and Preprocessing*
 Dataset Selection: Choose diverse datasets like RAVDESS, IEMOCAP, and Emo-DB that cover a wide range of emotions (e.g., happiness, sadness, anger).
 Data Augmentation: Apply techniques like noise addition, pitch shifting, and speed changes to enhance the model's robustness.
 Feature Extraction: Convert audio signals into spectrograms, particularly Mel-spectrograms, which effectively capture emotional cues in speech.
 
-CNN Architecture Design
+*CNN Architecture Design*
 Input Layer: Use resized spectrograms as input.
 Convolutional and Pooling Layers: Extract and down-sample spatial features to identify emotion-specific patterns.
 Fully Connected Layers: Map extracted features to emotion categories.
 Output Layer: Use a softmax layer to predict emotion probabilities.
 
-Model Training
+*Model Training*
 Loss Function and Optimizer: Use categorical cross-entropy and Adam optimizer for efficient training.
 Training Techniques: Employ early stopping and learning rate decay to prevent overfitting, with validation on a separate dataset.
 
-Model Evaluation and Testing
+*Model Evaluation and Testing*
 Testing on Unseen Data: Evaluate the model using accuracy, precision, recall, and F1-score on a test set.
 Robustness Testing: Test the model's performance under various noisy conditions and with different speakers.
 
-Deployment Considerations
+*Deployment Considerations*
 Model Optimization: Optimize the model for edge devices using techniques like quantization or pruning.
 Application Integration: Implement the model in applications requiring real-time emotion recognition, such as virtual assistants and healthcare systems.
 
