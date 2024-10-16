@@ -24,3 +24,7 @@ Model Evaluation and Testing
 Deployment Considerations
 ●	Model Optimization: Optimize the model for edge devices using techniques like quantization or pruning.
 ●	Application Integration: Implement the model in applications requiring real-time emotion recognition, such as virtual assistants and healthcare systems.
+
+Dataset used: TORONTO EMOTION SPEECH SET
+https://www.kaggle.com/datasets/ejlok1/toronto-emotional-speech-set-tess
+
